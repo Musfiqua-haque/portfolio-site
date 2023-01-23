@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&display=swap');
+
+ body{
+    font-family: 'Playfair Display', serif;
+} 
+
+:root{
+    --primary-white: #fff;
+
+}
+
+/* *************************Navbar********************** */
+.logo{
+    width: 190px;
+    height: 90px;
+}
+
+/* Menu Link */
+
+nav a.nav-link{
+    font-size: 500;
+    letter-spacing: 0.6px;
+    cursor: pointer;
+}
+
+nav ul li{
+    text-transform: uppercase;
+}
+
+.navbar-nav > li > a{
+color: var(--primary-white) !important;
+margin-left: 12px;
+margin-right: 12px;
+}
+
+.navbar-brand{
+    max-height: 17rem;
+    padding: 0 !important;
+    height: 6rem !important;
+}
