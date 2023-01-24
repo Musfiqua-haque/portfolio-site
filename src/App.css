@@ -8,7 +8,7 @@
 :root{
     --primary-white: #fff;
     --primary-orange: #FF8B13;
-
+    --primary-red: #820000;
 }
 
 /* *************************Navbar********************** */
@@ -48,4 +48,38 @@ margin-right: 12px;
 
 .navbar-nav > li > a:hover{
     border-bottom: 4px solid var(--primary-orange);
+}
+
+/* *************************HEADER********************** */
+
+.header-wraper{
+    position: relative;
+    background:url(./images/header-image.jpg) ;
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    width: 100%;
+}
+
+.main-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+}
+
+h1{
+    color: var(--primary-orange);
+}
+
+/* .typed-text{
+    font-size: 2rem;
+    color: var(--primary-white);
+} */
+
+/* *************************CONTACT BUTTON********************** */
+
+.contact-button{
+    
 }
