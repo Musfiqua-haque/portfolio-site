@@ -1,5 +1,6 @@
 import React from 'react'
-import logo from '../images/logo.jpg'
+// import logo from '../images/logo.jpg'
+import navbar from '../images/navbar.jpg'
 
 /* REACT FONTAWESOME IMPORT */
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -8,7 +9,7 @@ export default function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-dark">
   <div className="container">
-  <a className='navbar-brand' href="#"><img className='logo' src={logo} alt="portfolio-logo..." /></a>
+  <a className='navbar-brand' href="#"><img className='logo' src={navbar} alt="portfolio-logo..." /></a>
   <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <FontAwesomeIcon icon={faBars} style={{color:'#fff'}}/>
   </button>
