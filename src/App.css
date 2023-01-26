@@ -28,6 +28,8 @@ nav a.nav-link{
 
 nav ul li{
     text-transform: uppercase;
+    font-size: bolder;
+    font-family: 'Playfair Display', serif;
 }
 
 .navbar-nav > li > a{
@@ -65,29 +67,28 @@ margin-right: 12px;
 .main-info{
   left: 50%;
   position: absolute;
-  top: 50%;
+  top: 55%;
   transform: translate(-50%, -50%);
   text-align: center;
   font-family: 'Playfair Display', serif;
 }
    
 
-
-h1{
-    color: var(--primary-orange);
-}
-
-
 .header-logo img{
-    width: 290px;
-    height: 300px;
+    width: 320px;
+    height: 310px;
     border-radius: 50%;
     left: 50%;
     position: absolute;
     top: 25%;
     transform: translate(-50%, -50%);
     text-align: center;
-    border: 2px solid var(--primary-orange);
+    border: 8px solid var(--primary-orange);
+}
+
+h1{
+    color: var(--primary-orange);
+    top: 3rem;
 }
 
 .contact-button{
@@ -98,4 +99,5 @@ h1{
     padding: .5rem 2rem;
     
 }
+
 
