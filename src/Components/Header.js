@@ -27,7 +27,7 @@ export default function Header() {
                 <div className="title-item">App developer</div>
               </div>
             </div>
-            <a href="#" className='contact-button'>Contact</a>
+            {/* <a href="#" className='contact-button'>Contact</a> */}
             <div className="header-icon">
               <FontAwesomeIcon className='social-icon' icon={faPhone} />
               <FontAwesomeIcon className='social-icon' icon={faEnvelope} />
