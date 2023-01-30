@@ -166,7 +166,7 @@ h1{
 }
 
 .a-left{
-    flex: 1 1 1px !important;
+    flex: 1px !important;
     position: relative !important;
     display: flex !important;
     justify-content: center !important;
@@ -174,7 +174,7 @@ h1{
 }
 
 .a-right{
-    flex: 1 1 1px;
+    flex: 1px;
     margin-top: 20px;
     padding: 2rem;
 }
@@ -188,10 +188,10 @@ h1{
 }
 .a-card{
     width: 60%;
-    height: 70vh;
+    height: 60vh;
     border-radius: 30px;
     position: relative;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 .a-img{
     width: 100%;
@@ -201,10 +201,12 @@ h1{
     
 }
 
-.a-card img{
-    width: 430px;
-    height: 593px;
-}
+/* .a-card img{
+    width: 500px;
+    height: 500px;
+    border-radius: 30px;
+   
+} */
 
 .a-title{
     font-weight: 400;
@@ -221,3 +223,4 @@ h1{
     font-size: 25px;
     font-weight: 100;
 }
+

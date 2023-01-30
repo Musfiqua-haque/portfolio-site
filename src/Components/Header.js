@@ -23,7 +23,7 @@ export default function Header() {
               <div className="title-wraper">
                 <div className="title-item">React developer</div>
                 <div className="title-item">web developer</div>
-                <div className="title-item">Marketing</div>
+                <div className="title-item">designer</div>
                 <div className="title-item">App developer</div>
               </div>
             </div>
