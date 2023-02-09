@@ -1,0 +1,36 @@
+
+.contact-short{
+    max-width: 60vw;
+    margin: auto;
+    padding: 5rem 10rem;
+    background-color: #fff;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transform: translateY(50%);
+}
+
+.top-contact{
+    display: grid;
+    grid-template-columns: auto auto
+}
+
+.top-contact div:last-child{
+    justify-self: end;
+    align-self: center;
+}
+
+footer{
+    padding: 14rem 0 9rem 0;
+    background-color: var(--primary-red);
+}
+
+.box{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+.footer-heading{
+    color: var(--primary-white);
+}
+.inner-text{
+    color: var(--primary-white);
+}

@@ -1,4 +1,5 @@
 import React from 'react'
+import './header.css'
 import hero from '../images/hero.jpg'
 // import Typed from 'react-typed'\
 
@@ -18,7 +19,7 @@ export default function Header() {
         <img className='hero' src={hero} alt="Hero logo" />
       </div>
         <div className='main-info'>
-            <h1>Musfiqua Haque</h1>
+            <h1 className='name'>Musfiqua Haque</h1>
             <div className="title">
               <div className="title-wraper">
                 <div className="title-item">React developer</div>
