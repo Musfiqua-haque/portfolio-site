@@ -36,6 +36,7 @@ export default function Footer() {
 
             <div className='footer-about'>
             <h3 className='footer-heading'>Follow Us</h3>
+            <div className="footer-social-icon d-flex">
             <div>
             <FaDiscord />
             </div>
@@ -44,7 +45,8 @@ export default function Footer() {
             </div>
             <div>
             <FaDiscord />
-            </div>        
+            </div> 
+            </div>       
             </div>
 
             <div className='footer-about'>
