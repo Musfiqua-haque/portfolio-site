@@ -27,7 +27,8 @@ footer{
 
 .footer-box{
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: 2fr 2fr 1fr 1fr;
+    padding: 0 4rem 0 5rem;
 }
 
 .footer-about{
@@ -46,22 +47,39 @@ footer{
 }
 
 input{
-    max-width: 50rem;
+    max-width: 12rem;
     color:var(--primary-white);
     padding: 1rem 2.4rem;
     text-transform: uppercase;
     font-family: 'Playfair Display', serif;
     cursor: pointer;
+    border: 2px solid black;
 }
 ::placeholder{
     color: var(--primary-red) !important;
     font-weight: bold;
 }
 input[type="submit"]{
-    max-width: 20rem;
+    max-width: 12rem;
     margin-top: 2rem;
     background-color: var(--primary-orange) !important;
     color: var(--primary-white) !important;
     font-family: 'Playfair Display', serif;
     font-weight: bold;
+}
+
+.footer-social-icon{
+    gap: 2rem;
+}
+
+.footer-icon{
+    padding: 1rem;
+    border-radius: 50%;
+    border: 2px solid var(--primary-white);
+}
+.icons{
+    color: var(--primary-orange);
+    font-size: 2rem;
+    cursor: pointer;
+    position: relative;
 }

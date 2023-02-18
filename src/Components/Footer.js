@@ -1,7 +1,7 @@
 import React from 'react'
 import './footer.css';
 // import {NavLink} from 'react-router-dom'
-import { FaDiscord } from "react-icons/fa";
+import { FaDiscord, FaInstagram, FaYoutube } from "react-icons/fa";
 
 export default function Footer() {
   return (
@@ -26,32 +26,32 @@ export default function Footer() {
             <p className='inner-text'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, voluptas?Lorem ipsum dolor sit amet.</p>
             </div>
 
-            <div className='footer-about'>
+            <div className='footer-subscribe '>
             <h3 className='footer-heading'>Subscribe to get important updates</h3>
-            <form action="#"className='mt-4'>
-                <input type="email" required autoComplete='off' placeholder='Email' />
+            <form action="#"className='mt-4 d-flex flex-column'>
+                <input  type="email" required autoComplete='off' placeholder='Email' />
                 <input type="submit" value='subscribe'/>
             </form>
             </div>
 
-            <div className='footer-about'>
+            <div className='footer-social'>
             <h3 className='footer-heading'>Follow Us</h3>
             <div className="footer-social-icon d-flex">
-            <div>
-            <FaDiscord />
+            <div className='footer-icon'>
+            <FaDiscord className='icons' />
             </div>
-            <div>
-            <FaDiscord />
+            <div className='footer-icon'>
+            <FaInstagram className='icons'/>
             </div>
-            <div>
-            <FaDiscord />
+            <div className='footer-icon'>
+            <FaYoutube className='icons' />
             </div> 
             </div>       
             </div>
 
-            <div className='footer-about'>
-            <h3 className='footer-heading'>Rockstar developer</h3>
-            <p className='inner-text'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, voluptas?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, officia.</p>
+            <div className='footer-contact'>
+            <h3 className='footer-heading'>Contact Me</h3>
+            <p className='inner-text'>+002134567</p>
             </div>
             </div>
         </footer>
