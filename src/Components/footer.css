@@ -46,7 +46,7 @@ footer{
     font-size: 20px;
 }
 
-input{
+ input.footer-input{
     max-width: 12rem;
     color:var(--primary-white);
     padding: 1rem 2.4rem;
@@ -55,10 +55,10 @@ input{
     cursor: pointer;
     border: 2px solid black;
 }
-::placeholder{
+ /* ::placeholder{
     color: var(--primary-red) !important;
     font-weight: bold;
-}
+}  */
 input[type="submit"]{
     max-width: 12rem;
     margin-top: 2rem;
@@ -66,7 +66,7 @@ input[type="submit"]{
     color: var(--primary-white) !important;
     font-family: 'Playfair Display', serif;
     font-weight: bold;
-}
+} 
 
 .footer-social-icon{
     gap: 2rem;

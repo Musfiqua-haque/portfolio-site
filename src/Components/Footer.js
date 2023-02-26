@@ -29,8 +29,8 @@ export default function Footer() {
             <div className='footer-subscribe '>
             <h3 className='footer-heading'>Subscribe to get important updates</h3>
             <form action="#"className='mt-4 d-flex flex-column'>
-                <input  type="email" required autoComplete='off' placeholder='Email' />
-                <input type="submit" value='subscribe'/>
+                <input className='footer-input' type="email" required autoComplete='off' placeholder='Email' />
+                <input className='footer-input' type="submit" value='subscribe'/>
             </form>
             </div>
 
