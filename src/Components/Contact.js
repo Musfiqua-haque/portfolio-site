@@ -22,7 +22,7 @@ export default function Contact() {
                         <input type="email" className='contact email' placeholder='Your Email*' />
                         <input type="text" className='contact text' placeholder='Write Your Subject*' />
                         <textarea type="text" className='contact textarea' placeholder='Write Your Text Here*' />
-                        <button>Submit</button>
+                        <button className='contact-btn'>Submit</button>
                     </div>
                 </div>
             </div>
