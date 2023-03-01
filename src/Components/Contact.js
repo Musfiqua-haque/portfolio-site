@@ -1,8 +1,17 @@
 import React from 'react'
 import './contact.css'
+import { useRef } from 'react'
 import contact from '../images/contact.jpg'
 
 export default function Contact() {
+    const form = useRef();
+
+
+    const sendEmail=()=>{
+
+    }
+
+
   return (
     <div className='contact component_space'>
         <div className="row">
@@ -14,15 +23,17 @@ export default function Contact() {
                             I am available for freelancing work, contact with me via phnone.
                         </p>
                         <p className='text-white text-center'>
-                            <strong>+88 098 1256</strong>or email <strong>admin@gmail.com</strong>
+                            <strong>+88 098 1256 </strong>or email <strong>admin@gmail.com</strong>
                         </p>
                     </div>
                     <div className="input-box mt-5">
+                        <form ref={form} onSubmit={sendEmail}>
                         <input type="text" className='contact name ' placeholder='Your Name*' />
                         <input type="email" className='contact email' placeholder='Your Email*' />
                         <input type="text" className='contact text' placeholder='Write Your Subject*' />
                         <textarea type="text" className='contact textarea' placeholder='Write Your Text Here*' />
                         <button className='contact-btn'>Submit</button>
+                        </form>
                     </div>
                 </div>
             </div>
