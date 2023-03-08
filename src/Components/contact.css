@@ -1,6 +1,6 @@
 .contact{
     background-color: #191919;
-    margin-top: 13rem;
+    margin-top: 30rem;
     font-family: 'Playfair Display', serif;
 
 }
@@ -49,8 +49,8 @@ input.contact{
 
 .contact_img{
     border-radius: 10px;
-    width: 500px;
-    height: 700px;
+    min-width: 400px;
+    min-height: 500px;
     margin-top: 5.5rem;
     margin-left: 7rem;
 }
