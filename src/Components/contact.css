@@ -2,6 +2,7 @@
     background-color: #191919;
     margin-top: 30rem;
     font-family: 'Playfair Display', serif;
+    width: 99%;
 
 }
 .contact_meta{
@@ -49,10 +50,10 @@ input.contact{
 
 .contact_img{
     border-radius: 10px;
-    min-width: 400px;
-    min-height: 500px;
-    margin-top: 5.5rem;
-    margin-left: 7rem;
+    width: 400px;
+    height: 500px;
+    margin-top: 9rem;
+    margin-left: 9rem;
 }
 textarea.contact{
     margin-left: 10rem;

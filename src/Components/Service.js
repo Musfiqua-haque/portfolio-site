@@ -8,14 +8,13 @@ import { faBusinessTime } from '@fortawesome/free-solid-svg-icons'
 export default function Service() {
   return (
     <div className='service component_space'>
-        <div className="heading">
-            <h1 className='heading'>My Awesome project</h1>
-            <p className='heading p_color'>There are many variations of passage in lprem ipsam</p>
-            <p className='heading p_color'>But the majority have not more then that issue having that</p>
+        <div className="heading text-center">
+            <h2 className='heading'>My Awesome project</h2>
+            <p className='heading p_color text-center'>There are many variations of passage</p>
+            <p className='heading p_color'>But the majority have not more then that issue</p>
         </div>
         <div className='container'>
-            <div className="row">
-
+            <div className="services">
                 <div className="col_3">
                     <div className="service_box text-white">
                         <div className="icon">
@@ -99,8 +98,6 @@ export default function Service() {
                         </div>
                     </div>
                 </div>
-
-
             </div>
         </div>
     </div>

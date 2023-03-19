@@ -1,16 +1,16 @@
 ************************** ABOUT ME *******************************/
 .a{
-    display: flex;
+    /* display: flex; */
     justify-content: center;
     height: 100vh;
     flex-direction: column;
 }
 
 .a-left{
-    flex: 1px !important;
-    position: relative !important;
-    display: flex !important;
-    justify-content: center !important;
+    flex: 1px;
+    position: relative;
+    display: flex;
+    justify-content: center;
     text-align: center;
     
 }
@@ -47,7 +47,7 @@
 
 
 .a-title{
-    font-weight: 400;
+    font-weight: 300;
     font-family: 'Playfair Display', serif;
     text-transform: uppercase;
     margin-top: 25px;

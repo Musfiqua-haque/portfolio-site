@@ -13,7 +13,7 @@ export default function Contact() {
 
 
   return (
-    <div className='contact component_space'>
+    <div className='contact'>
         <div className="row">
             <div className="col-6">
                 <div className="contact_box">
