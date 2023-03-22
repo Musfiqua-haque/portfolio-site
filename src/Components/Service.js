@@ -13,7 +13,6 @@ export default function Service() {
             <p className='heading p_color text-center'>There are many variations of passage</p>
             <p className='heading p_color'>But the majority have not more then that issue</p>
         </div>
-        <div className='container'>
             <div className="services">
                 <div className="col_3">
                     <div className="service_box text-white">
@@ -99,7 +98,6 @@ export default function Service() {
                     </div>
                 </div>
             </div>
-        </div>
     </div>
   )
 }

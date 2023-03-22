@@ -14,7 +14,7 @@ import { faAddressCard} from '@fortawesome/free-solid-svg-icons'
 
 export default function Header() {
   return (
-    <div className='header-wraper'>
+    <div className='header-wraper container'>
       <div className="header-logo">
         <img className='hero' src={hero} alt="Hero logo" />
       </div>

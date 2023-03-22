@@ -16,9 +16,10 @@
 
 /* *************************Navbar********************** */
 .logo{
-    width: 118px;
-    height: 95px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
+    margin-left: 15rem;
 }
 
 /* Menu Link */
@@ -33,6 +34,9 @@ nav ul li{
     text-transform: uppercase;
     font-size: bolder;
     font-family: 'Playfair Display', serif;
+}
+.navbar{
+    width: 100%;
 }
 
 .navbar-nav > li > a{
@@ -56,5 +60,14 @@ margin-right: 12px;
     border-bottom: 4px solid var(--primary-orange);
 }
 
+@media screen and (max-width:576px){
+    .navbar{
+        width: 146%;
+    }
+}
 
-
+@media screen and (max-width:768px){
+    .navbar{
+        width: 122%;
+    }
+}
