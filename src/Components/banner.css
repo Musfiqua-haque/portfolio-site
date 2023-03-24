@@ -1,39 +1,44 @@
-/* *************************HEADER********************** */
 
-.header-wraper{
+.header-wrapper{
     position: relative;
     background:url('../images/header-image.jpg') ;
     background-size: cover;
     background-position: center;
     height: 100vh;
     width: 100%;
+    z-index: -1;
 }
-
-.main-info{
-  left: 50%;
-  position: absolute;
-  top: 60%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  font-family: 'Playfair Display', serif;
+.header-logo{
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    position: relative;
 }
-   
 
 .header-logo img{
     width: 250px;
     height: 250px;
     border-radius: 50%;
-    left: 42%;
     position: absolute;
-    top: 3rem;
-    /* transform: translate(-50%, -50%);
-    text-align: center; */
     border: 8px solid var(--primary-orange);
+    top: 10%;
+    left: 41%;
 }
+
+.main-info{
+    left: 50%;
+    position: absolute;
+    top: 70%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+  }
 
 .name{
     color: var(--primary-red);
     padding: 1rem 1rem;
+    font-family: Georgia, serif;
+    font-size: 30px;
 }
 
 .title{
@@ -41,7 +46,7 @@
     overflow: hidden;
 }
 
-.title-wraper{
+.title-wrapper{
     height: 100%;
     animation: move 10s ease-in-out infinite alternate;
 }
@@ -53,7 +58,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-   
+    font-family: Georgia, serif;
 }
 
 @keyframes move{
@@ -78,7 +83,7 @@
     padding: .5rem 2rem;
     border-top-left-radius: 25px;
     border-bottom-right-radius: 25px;
-    font-family: 'Playfair Display', serif;
+    /* font-family: 'Playfair Display', serif; */
     
 }
 
@@ -93,27 +98,69 @@
 .social-icon{
     color: var(--primary-orange);
     padding:1rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
+    transition: all 2s;
     
 }
 
 .social-icon:hover{
     color: var(--primary-red);
+    transition: all 1s;
+
 }
 
-/* @media screen and (max-width:576px) {
-    .header-wraper{
-    background-size: cover;
-    background-position: center;
-    height: 170vh;
-    width: 146.2%;
+@media screen and (max-width:576px){
+    .header-logo img{
+        width:150px;
+        height:150px;
+        top: 20%;
+        left: 30%;
     }
-    .name{
+}
+
+@media screen and (max-width:1024px){
+    
+    .header-wrapper{
         position: relative;
-        top: 2rem;
-        padding: 4rem;
+        background-size: cover;
+        background-position: center;
+        height: 130vh;
+        width: 100%;
     }
     .header-logo img{
-        left: 36%;
+        width:200px;
+        height:200px;
+        top: 20%;
     }
-} */
+    .main-info{
+        left: 50%;
+        position: absolute;
+    }
+    .header-icon{
+        margin-top: 0;
+    }
+}
+
+
+
+@media screen and (max-width:1200px){
+    .header-wrapper{
+        position: relative;
+        background-size: cover;
+        background-position: center;
+        height: 150vh;
+        width: 100%;
+    }
+
+    .header-logo img{
+        width:150px;
+        height:150px;
+        top: 20%;
+        left: 43%;
+    }
+    .main-info{
+        left: 50%;
+        position: absolute;
+        top: 70%;
+    }
+}

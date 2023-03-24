@@ -55,10 +55,7 @@ footer{
     cursor: pointer;
     border: 2px solid black;
 }
- /* ::placeholder{
-    color: var(--primary-red) !important;
-    font-weight: bold;
-}  */
+ 
 input[type="submit"]{
     max-width: 12rem;
     margin-top: 2rem;

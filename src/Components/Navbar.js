@@ -1,40 +1,34 @@
 import React from 'react'
-// import logo from '../images/logo.jpg'
-import navbar from '../images/navbar.jpg'
-
-/* REACT FONTAWESOME IMPORT */
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBars } from '@fortawesome/free-solid-svg-icons'
+import './navbar.css'
+import { useRef } from 'react'
+import { FaBars, FaTimes, FaReact } from 'react-icons/fa'
 
 export default function Navbar() {
+
+  const inputRef = useRef()
+
+  const handleNavBtn=()=>{
+    inputRef.current.classList.toggle("mobile_nav")
+  }
+
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-dark">
-  <a className='navbar-brand' href="#"><img className='logo' src={navbar} alt="portfolio-logo..." /></a>
-  <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <FontAwesomeIcon icon={faBars} style={{color:'#fff', padding:'.5rem'}}/>
-  </button>
-  <div className="collapse navbar-collapse w-100" id="navbarSupportedContent">
-    <ul className="navbar-nav m-auto">
-      <li className="nav-item active">
-        <a className="nav-link" href="#">Home</a>
-      </li>
-      <li className="nav-item">
-        <a className="nav-link" href="#">About Me</a>
-      </li>
-      <li className="nav-item">
-        <a className="nav-link" href="#">Services</a>
-      </li>
-      <li className="nav-item">
-        <a className="nav-link" href="#">Portfolio</a>
-      </li>
-      <li className="nav-item">
-        <a className="nav-link" href="#">Work</a>
-      </li>
-      <li className="nav-item">
-        <a className="nav-link" href="#">Contact</a>
-      </li>   
-    </ul> 
-  </div>
-</nav>
+    <div>
+      <header>
+        <h3 className='logo'><FaReact/></h3>
+        <nav ref={inputRef}>
+          <a href="/#">Home</a>
+          <a href="/#">About</a>
+          <a href="/#">Project</a>
+          <a href="/#">Service</a>
+          <a href="/#">Contact</a>
+          <button className='nav_btn nav_close_btn' onClick={handleNavBtn}>
+            <FaTimes/>
+          </button>
+        </nav>
+        <button className='nav_btn' onClick={handleNavBtn}>
+          <FaBars/>
+        </button>
+      </header>
+    </div>
   )
 }
