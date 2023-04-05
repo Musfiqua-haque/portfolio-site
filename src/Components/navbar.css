@@ -1,17 +1,17 @@
 
-header{
+/* header{
     display: flex;
     text-align: center;
     justify-content: space-between;
     background-color: var(--primary-blue);
     height: 80px;
-    padding: 0 2rem;
+    padding: 10px 2rem;
     color: var(--primary-white);
 }
 
 header .logo{
     color: var(--primary-red);
-    font-size: 50px;
+    font-size: 45px;
 }
 
 nav a{
@@ -19,7 +19,8 @@ nav a{
     color: var(--primary-white);
     text-decoration: none;
     font-family: Georgia, serif;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+
 }
 
 nav a:hover{
@@ -28,14 +29,14 @@ nav a:hover{
 
 
 header .nav_btn{
-padding: 5px;    
-cursor: pointer;
-background: transparent;
-border: none;
-outline: none;
-color: var(--primary-red);
-visibility: hidden;
-font-size: 1.5rem;
+        padding: 5px;    
+        cursor: pointer;
+        background: transparent;
+        border: none;
+        outline: none;
+        color: var(--primary-red);
+        visibility: hidden;
+        font-size: 1.5rem;
 }
 
 @media screen and (max-width:1024px) {
@@ -57,13 +58,88 @@ font-size: 1.5rem;
         transform: translateY(-100vh);
         background-color: var(--primary-blue);
     }
+    nav a{
+        font-size: 1rem;
+    }
     header .mobile_nav{
-        transform: none;
+        transform: none;       
+
+
     }
 
     header .nav_close_btn{
         position: absolute;
         top: 2rem;
         right: 2rem;
+    }
+} */
+
+header{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--primary-blue);
+    position: fixed;
+    width: 100%;
+    height: 90px;
+}
+.logo{
+    color: var(--primary-red);
+    font-size: 2.5em;
+}
+
+.nav-menu{
+    display: flex;
+}
+.nav-menu li{
+    padding: 0 1rem;
+    list-style: none;
+}
+.nav-menu li a{
+    font-size: 1.5rem;
+    text-decoration: none;
+    font-family: Georgia, serif;
+    color: var(--primary-white);
+}
+.hamburger{
+    display: none;
+}
+.hamburger_btn{
+    border: none;
+    outline: none;
+    font-size: 1.5rem;
+    background-color: transparent;
+    color: var(--primary-white);
+}
+
+@media screen and (max-width:576px) {
+    .nav-menu{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: red;
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: -100%;
+        z-index: -3;
+        transition: 0.3s;
+    }
+    .nav-menu.active{
+        left: 0;
+    }
+    /* .logo{
+        position: absolute;
+        top:0;
+        left: 0;
+    } */
+    .nav-menu li{
+        text-align: center;
+        padding: .5rem;
+    }
+    .hamburger{
+        display: initial;
     }
 }

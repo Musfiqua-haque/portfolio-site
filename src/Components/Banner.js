@@ -1,6 +1,6 @@
 import React from 'react'
 import './banner.css'
-import hero from '../images/hero.jpg'
+// import hero from '../images/hero.jpg'
 
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -14,9 +14,9 @@ import { faAddressCard} from '@fortawesome/free-solid-svg-icons'
 export default function Header() {
   return (
     <div className='header-wrapper'>
-      <div className="header-logo">
+      {/* <div className="header-logo">
         <img src={hero} alt="Hero logo" />
-      </div>
+      </div> */}
         <div className='main-info'>
             <h1 className='name mt-4'>Musfiqua Haque</h1>
             <div className="title">

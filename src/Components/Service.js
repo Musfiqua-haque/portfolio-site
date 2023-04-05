@@ -10,11 +10,11 @@ export default function Service() {
     <div className='service component_space'>
         <div className="heading text-center">
             <h2 className='heading'>My Awesome project</h2>
-            <p className='heading p_color text-center'>There are many variations of passage</p>
+            <p className='heading p_color mt-3 text-center'>There are many variations of passage</p>
             <p className='heading p_color'>But the majority have not more then that issue</p>
         </div>
             <div className="services">
-                <div className="col_3">
+                <article className="">
                     <div className="service_box text-white">
                         <div className="icon">
                         <FontAwesomeIcon icon={faBusinessTime} />
@@ -26,9 +26,9 @@ export default function Service() {
                             <p className='p service-text'>close the earth.</p>
                         </div>
                     </div>
-                </div>
+                </article>
 
-                <div className="col_3">
+                <article className="col_3">
                     <div className="service_box text-white ">
                         <div className="icon">
                         <FontAwesomeIcon icon={faBusinessTime} />
@@ -40,9 +40,9 @@ export default function Service() {
                             <p className='p service-text'>close the earth.</p>
                         </div>
                     </div>
-                </div>
+                </article>
 
-                <div className="col_3">
+                <article className="col_3">
                     <div className="service_box text-white ">
                         <div className="icon">
                         <FontAwesomeIcon icon={faBusinessTime} />
@@ -54,9 +54,9 @@ export default function Service() {
                             <p className='p service-text'>close the earth.</p>
                         </div>
                     </div>
-                </div>
+                </article>
 
-                <div className="col_3">
+                <article className="col_3">
                     <div className="service_box text-white">
                         <div className="icon">
                         <FontAwesomeIcon icon={faBusinessTime} />
@@ -68,9 +68,9 @@ export default function Service() {
                             <p className='p service-text'>close the earth.</p>
                         </div>
                     </div>
-                </div>
+                </article>
 
-                <div className="col_3">
+                <article className="col_3">
                     <div className="service_box text-white ">
                         <div className="icon">
                         <FontAwesomeIcon icon={faBusinessTime} />
@@ -82,9 +82,9 @@ export default function Service() {
                             <p className='p service-text'>close the earth.</p>
                         </div>
                     </div>
-                </div>
+                </article>
 
-                <div className="col_3">
+                <article className="col_3">
                     <div className="service_box text-white ">
                         <div className="icon">
                         <FontAwesomeIcon icon={faBusinessTime} />
@@ -96,7 +96,7 @@ export default function Service() {
                             <p className='p service-text'>close the earth.</p>
                         </div>
                     </div>
-                </div>
+                </article>
             </div>
     </div>
   )

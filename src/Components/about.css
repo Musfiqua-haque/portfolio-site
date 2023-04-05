@@ -1,32 +1,35 @@
-.a{
+.about{
     justify-content: center;
+    width: 100%;
     height: 100vh;
     margin-right: 0;
+    z-index: -1;
 }
 
-.a-left{
+.about-left{
     position: relative;
     display: flex;
     justify-content: center;
     text-align: center;
+    z-index: -1;
 }
 
-.a-right{
+.about-right{
     margin-top: 3rem;
-    padding-left: 2rem;
     text-align: left;
     text-align: justify;
     line-height: 2rem;
+    padding-right: 1rem;
 }
 
-.a-card.bg{
+.about-card.bg{
     position: absolute;
     top: 50px;
     left: 50px;
     background-color:var(--primary-blue);
 
 }
-.a-card{
+.about-card{
     width: 70%;
     height: 70vh;
     border-radius: 30px;
@@ -41,24 +44,25 @@
 }
 
 .a-title{
-    font-weight: 200;
-    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    font-size: 30px;
+    font-family: Georgia, serif;
     text-transform: uppercase;
     margin-top: 3rem;
 }
 .sub{
-    font-family: 'Playfair Display', serif;
-    font-size: 20px;
+    font-family: Georgia, serif;
+    font-size: 18px;
     padding-top: 0;
 }
 .a-desc{
-    font-family: 'Playfair Display', serif;
-    font-size: 20px;
+    font-family: Georgia, serif;
+    font-size: 18px;
     font-weight: 100;
 }
 
-@media screen and (max-width:576px) {
-    .a-card.bg{
+@media screen and (min-width:576px) {
+    /* .a-card.bg{
         position: absolute;
         top: 50px;
         left: 50px;
@@ -70,5 +74,17 @@
         height: 70vh;
         border-radius: 30px;
         position: relative;    
+    } */
+    
+    .about-right{
+        padding: 2rem 3rem;
+    } 
+}
+
+@media screen and (min-width:768px){
+    .about-right{
+        padding: 2rem 3rem;
     }
 }
+
+
